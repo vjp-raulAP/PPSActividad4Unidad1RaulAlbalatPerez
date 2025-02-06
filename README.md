@@ -47,7 +47,7 @@ Comporbamos si Python3 está instalado para poder ejecutar la calculadora.
 
 Ahora procedemos a ejecutar firejail con la calculadora. Al probarlo vemos que no se ejecuta correctamente. debe de ser algun conflicto con la shell de ubuntu. Para solucionarlo probaremos instalando una nueva consola **konsole**. 
 
-Vemos que la calculadoraBasica.py se ejecuta en entorno seguro. Pero voy a instalar la aplicacion **firetools** que tiene un entorno gráfico, el cual es más sencillo de monitorizar el PID que nos genere.
+Vemos que la ***calculadoraBasica.py*** se ejecuta en entorno seguro. Pero voy a instalar la aplicacion **firetools** que tiene un entorno gráfico, el cual es más sencillo de monitorizar el PID que nos genere.
 
 ~~~
 sudo apt install firetools -y
@@ -57,7 +57,7 @@ Con esto ya nos generará una aplicación que podemos acceder a ella desde las a
 
 ![](imagenes/imagen7.png)
 
-Ahora procedemos a ejecutar firejail con la calculadora. Al probarlo vemos que no se ejecuta correctamente. debe de ser algun conflicto con la shell de ubuntu. Para solucionarlo probaremos instalando una nueva consola **konsole**. y volvemos a ejecutar firejail
+Ahora procedemos a ejecutar **firejail** con la calculadora. Al probarlo vemos que no se ejecuta correctamente. debe de ser algun conflicto con la shell de ubuntu. Para solucionarlo probaremos instalando una nueva consola **konsole**. y volvemos a ejecutar firejail
 
 ![](imagenes/imagen8.png)
 
