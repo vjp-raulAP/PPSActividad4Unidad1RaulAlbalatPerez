@@ -19,7 +19,7 @@ La actividad consiste en probar la aplicación de la **calculadora** (que realiz
 
 # 1.  Busca cuáles son las distintas alternativas disponibles para probar esta aplicación en una **Sandbox**.
 
-   ## Primera opción(que es la que desarrollo)
+   ## **Primera opción(que es la que desarrollo)**
 
 ###  Firejail (Linux)
 - **Descripción:** Es un entorno de aislamiento para aplicaciones en Linux que utiliza namespaces y seccomp para restringir los privilegios.
@@ -33,7 +33,7 @@ La actividad consiste en probar la aplicación de la **calculadora** (que realiz
 
 ![](imagenes/imagen17.png)
 ---
-## Segunda opción
+## **Segunda opción**
 ###  Windows Sandbox (Windows 10/11 Pro)
 - **Descripción:** Un entorno aislado dentro de Windows que permite ejecutar aplicaciones sin afectar el sistema principal.
 - **Ventajas:**
@@ -48,9 +48,9 @@ La actividad consiste en probar la aplicación de la **calculadora** (que realiz
 
 Adjunto [enlace activar windows sandbox](https://www.xataka.com/basics/windows-sandbox-que-como-activarlo)
 ---
-## Tercera opción
+## **Tercera opción**
 
-##  VirtualBox o VMware (Máquinas Virtuales)
+###  VirtualBox o VMware (Máquinas Virtuales)
 - **Descripción:** Plataformas de virtualización que permiten ejecutar sistemas operativos aislados.
 - **Ventajas:**
   - Máxima seguridad y aislamiento.
@@ -63,9 +63,9 @@ Adjunto [enlace activar windows sandbox](https://www.xataka.com/basics/windows-s
 
 Adjunto [como habilitar Windows Sandbox en vmware](https://www.redeszone.net/2019/01/23/habilitar-windows-sandbox-vmware/)
 ----
-## Cuarta opción
+## **Cuarta opción**
 
-##  Docker (Contenedores Aislados)  con cuckoo sandbox
+###  Docker (Contenedores Aislados)  con cuckoo sandbox
 - **Descripción:** Plataforma para ejecutar aplicaciones en contenedores con su propio entorno.
 - **Ventajas:**
   - Aislamiento sin necesidad de una VM completa.
