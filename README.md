@@ -66,7 +66,7 @@ Adjunto [como habilitar Windows Sandbox en vmware](https://www.redeszone.net/201
 ## **Cuarta opción**
 
 ###  Docker (Contenedores Aislados)  con cuckoo sandbox
-- **Descripción:** Plataforma para ejecutar aplicaciones en contenedores con su propio entorno.
+- **Descripción:** Cuckoo Sandbox es una herramienta de análisis de malware de código abierto que permite ejecutar archivos sospechosos en un entorno virtual aislado para observar su comportamiento. Se utiliza principalmente en ciberseguridad para analizar amenazas como virus, troyanos y exploits.
 - **Ventajas:**
   - Aislamiento sin necesidad de una VM completa.
   - Fácil de desplegar en distintos sistemas.
@@ -74,6 +74,13 @@ Adjunto [como habilitar Windows Sandbox en vmware](https://www.redeszone.net/201
   ```bash
   docker run --rm -it ubuntu bash
   ```
+
+ ### Características principales de Cuckoo Sandbox
+- **Análisis automatizado:** Ejecuta archivos maliciosos en un entorno seguro y monitorea su comportamiento.
+- **Soporte para múltiples tipos de archivos:** Ejecutables, documentos, scripts, archivos comprimidos y más.
+- **Generación de informes detallados:** Proporciona información sobre llamadas al sistema, cambios en el registro, conexiones de red, capturas de pantalla y más.
+- **Integración con herramientas de seguridad:** Compatible con YARA, Suricata y otros motores de detección.
+- **Virtualización flexible:** Se puede utilizar con VirtualBox, VMware, KVM o Xen.
 
 ![](imagenes/imagen20.png)
 
