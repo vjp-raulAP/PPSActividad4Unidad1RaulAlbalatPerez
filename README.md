@@ -21,7 +21,7 @@ La actividad consiste en probar la aplicación de la **calculadora** (que realiz
 
    ## Primera opción(que es la que desarrollo)
 
-##  Firejail (Linux)
+###  Firejail (Linux)
 - **Descripción:** Es un entorno de aislamiento para aplicaciones en Linux que utiliza namespaces y seccomp para restringir los privilegios.
 - **Ventajas:**
   - Ligero y fácil de usar.
@@ -29,11 +29,12 @@ La actividad consiste en probar la aplicación de la **calculadora** (que realiz
   - Control de permisos mediante perfiles configurables.
 - **Uso básico:**  
   ```bash
-  firejail ./calculadora
+  firejail ./calculadora.py
 
 ![](imagenes/imagen17.png)
 ---
-##  Windows Sandbox (Windows 10/11 Pro)
+## Segunda opción
+###  Windows Sandbox (Windows 10/11 Pro)
 - **Descripción:** Un entorno aislado dentro de Windows que permite ejecutar aplicaciones sin afectar el sistema principal.
 - **Ventajas:**
   - No requiere configuraciones complejas.
@@ -47,6 +48,8 @@ La actividad consiste en probar la aplicación de la **calculadora** (que realiz
 
 Adjunto [enlace activar windows sandbox](https://www.xataka.com/basics/windows-sandbox-que-como-activarlo)
 ---
+## Tercera opción
+
 ##  VirtualBox o VMware (Máquinas Virtuales)
 - **Descripción:** Plataformas de virtualización que permiten ejecutar sistemas operativos aislados.
 - **Ventajas:**
@@ -59,8 +62,10 @@ Adjunto [enlace activar windows sandbox](https://www.xataka.com/basics/windows-s
 ![](imagenes/imagen19.png)
 
 Adjunto [como habilitar Windows Sandbox en vmware](https://www.redeszone.net/2019/01/23/habilitar-windows-sandbox-vmware/)
----
-##  Docker (Contenedores Aislados)  como cuckoo
+----
+## Cuarta opción
+
+##  Docker (Contenedores Aislados)  con cuckoo sandbox
 - **Descripción:** Plataforma para ejecutar aplicaciones en contenedores con su propio entorno.
 - **Ventajas:**
   - Aislamiento sin necesidad de una VM completa.
@@ -73,6 +78,7 @@ Adjunto [como habilitar Windows Sandbox en vmware](https://www.redeszone.net/201
 ![](imagenes/imagen20.png)
 
 Adjunto [enlace a repositorio de cuckoo](https://github.com/blacktop/docker-cuckoo)
+
 
 # 2.  Crea el entorno controlado
 
