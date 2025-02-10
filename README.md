@@ -1,5 +1,80 @@
 # PPSActividad4Unidad1RaulAlbalatPerez
 
+# Actividad: Prueba de Aplicaciones en Entornos Controlados
+
+## Instrucciones
+
+Realiza lo indicado y adjunta las capturas de pantalla o pruebas necesarias para documentar la realización de cada paso.
+
+En esta actividad, trabajaremos sobre la prueba de aplicaciones en entornos controlados: **sandboxing** o cajas de arena.
+
+Puedes conocer más sobre esta técnica y sus diferentes alternativas en el siguiente artículo:  
+🔗 [¿Qué es el sandboxing de aplicaciones?](https://www.hysolate.com/learn/sandboxing/what-is-app-sandboxing/)
+
+## Objetivo de la Actividad
+
+La actividad consiste en probar la aplicación de la **calculadora** (que realizaste en una actividad anterior) en un entorno controlado. Si no tienes la aplicación terminada, puedes utilizar la que se encuentra adjunta en la tarea.
+
+## Pasos a Seguir
+
+# 1.  Busca cuáles son las distintas alternativas disponibles para probar esta aplicación en una **Sandbox**.
+
+   ## Primera opción(que es la que desarrollo)
+
+##  Firejail (Linux)
+- **Descripción:** Es un entorno de aislamiento para aplicaciones en Linux que utiliza namespaces y seccomp para restringir los privilegios.
+- **Ventajas:**
+  - Ligero y fácil de usar.
+  - Compatible con muchas aplicaciones sin necesidad de modificaciones.
+  - Control de permisos mediante perfiles configurables.
+- **Uso básico:**  
+  ```bash
+  firejail ./calculadora
+
+![](imagenes/imagen17.png)
+---
+##  Windows Sandbox (Windows 10/11 Pro)
+- **Descripción:** Un entorno aislado dentro de Windows que permite ejecutar aplicaciones sin afectar el sistema principal.
+- **Ventajas:**
+  - No requiere configuraciones complejas.
+  - Se restablece con cada uso (cualquier cambio desaparece al cerrarlo).
+- **Activación en Windows (si no está activado):**
+  ```powershell
+  Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -Online -NoRestart
+  ```
+
+![](imagenes/imagen18.png)
+
+Adjunto [enlace activar windows sandbox](https://www.xataka.com/basics/windows-sandbox-que-como-activarlo)
+---
+##  VirtualBox o VMware (Máquinas Virtuales)
+- **Descripción:** Plataformas de virtualización que permiten ejecutar sistemas operativos aislados.
+- **Ventajas:**
+  - Máxima seguridad y aislamiento.
+  - Permite probar en distintos sistemas operativos.
+- **Uso recomendado:**  
+  - Crear una VM con el sistema operativo adecuado.
+  - Instalar dependencias necesarias y probar la calculadora dentro de la VM.
+
+![](imagenes/imagen19.png)
+
+Adjunto [como habilitar Windows Sandbox en vmware](https://www.redeszone.net/2019/01/23/habilitar-windows-sandbox-vmware/)
+---
+##  Docker (Contenedores Aislados)  como cuckoo
+- **Descripción:** Plataforma para ejecutar aplicaciones en contenedores con su propio entorno.
+- **Ventajas:**
+  - Aislamiento sin necesidad de una VM completa.
+  - Fácil de desplegar en distintos sistemas.
+- **Ejemplo de ejecución de la calculadora en un contenedor Ubuntu:**
+  ```bash
+  docker run --rm -it ubuntu bash
+  ```
+
+![](imagenes/imagen20.png)
+
+Adjunto [enlace a repositorio de cuckoo](https://github.com/blacktop/docker-cuckoo)
+
+# 2.  Crea el entorno controlado
 
 Voy a realizar la practica con **firejail** en una máquina virtual **Ubuntu22.04** la cual la he instalado para realizar esta práctica
 
