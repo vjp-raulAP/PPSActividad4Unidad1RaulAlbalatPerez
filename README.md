@@ -21,8 +21,9 @@ La actividad consiste en probar la aplicación de la **calculadora** (que realiz
 
    ## **Primera opción(que es la que desarrollo)**
 
-###  Firejail (Linux)
-- **Descripción:** Es un entorno de aislamiento para aplicaciones en Linux que utiliza namespaces y seccomp para restringir los privilegios.
+###  Firejail (Linux) y seccomp-BPF
+- **Descripción:**  Firejail es un entorno de aislamiento para aplicaciones en Linux que utiliza namespaces y seccomp para restringir los privilegios. 
+ seccomp-BPF es una plataforma sandbox de código abierto que funciona asignando un filtro a un proceso , lo que permite o no las llamadas del sistema por le proceso.
 - **Ventajas:**
   - Ligero y fácil de usar.
   - Compatible con muchas aplicaciones sin necesidad de modificaciones.
